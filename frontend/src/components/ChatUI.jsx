@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
 
-const WEBSOCKET_URL = "ws://localhost:5000/ws/chat/";
+const WEBSOCKET_URL = "wss://live-chat-backend-mrrl.onrender.com/ws/chat/";
 
 const LiveChat = () => {
   const [username, setUsername] = useState(localStorage.getItem("username") || "");
